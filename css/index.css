@@ -20,8 +20,8 @@ body {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-  position:fixed;
-  width:100%;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 1000;
 }
@@ -113,7 +113,7 @@ body {
 
 .hero-slider {
   width: 100%;
-  margin-top:55px;
+  margin-top: 55px;
   height: 85vh;
   overflow: hidden;
   position: relative;
@@ -303,6 +303,69 @@ body {
 .view-all:hover {
   background-color: #c2d6e3;
   color: #207bd7;
+
+}
+
+/* Category card wrapper clickable */
+.category-link {
+  display: block;        /* full card clickable */
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* inherit text color */
+}
+
+/* Card styling */
+.category-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+/* Hover effect */
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Click effect */
+.category-card:active {
+  transform: scale(0.97);
+}
+
+/* Icon inside card */
+.cat-icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Card colors (customize as needed) */
+.electronics { background: #f4d386; }
+.fashion     { background: #00b4d8; }
+.home        { background: #ffbe0b; }
+.gift        { background: #62c7e0; }
+
+/* Shops count badge */
+.shop-count {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #3b3b98;
+  font-weight: 600;
 }
 
 .category-card {
@@ -310,14 +373,15 @@ body {
   border-radius: 20px;
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(14, 14, 14, 0.25);
   transition: 0.3s;
+  
 }
 
 .category-card:hover {
   transform: translateY(-8px);
-
-}
+ 
+  }
 
 .cat-icon {
   width: 60px;
@@ -330,6 +394,7 @@ body {
   justify-content: center;
   color: #fff;
   margin-bottom: 20px;
+
 }
 
 .electronics {
@@ -468,7 +533,6 @@ body {
   }
 }
 
-
 /* mobile safe */
 @media (max-width: 768px) {
   .local-scale-card {
@@ -477,9 +541,6 @@ body {
     max-width: 100%;
   }
 }
-
-
-
 
 /* Footer */
 
@@ -595,7 +656,6 @@ body {
     max-width: 100%;
   }
 }
-
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
