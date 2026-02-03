@@ -1,7 +1,111 @@
-body{
+body {
   background-color: #f9f9f6;
+  overflow-x: hidden;
 }
 
+/* ================= NAVBAR ================= */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -11px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+   /* box-sizing: border-box; */
+  /* padding-top: 0px; */
+  padding: 18px 70px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO container */
+.logo {
+  display: flex;
+  /* horizontal layout */
+  align-items: center;
+  /* vertically center all items */
+  gap: 8px;
+  /* space between icon, image, text */
+  font-size: 26px;
+  /* text size */
+  font-weight: 900;
+  color: #4f46e5;
+}
+
+/* span color */
+.logo span {
+  color: #22c55e;
+  padding-left: 0;
+   display: inline-block;
+  margin-left: -7px;
+}
+
+/* Font Awesome icon */
+.logo i {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+/* Logo image */
+.logo img {
+  height: 35px;
+  /* adjust size as needed */
+  width: auto;
+  display: block;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+  position: relative;
+  padding: 6px 4px;
+}
+
+.nav-links a i {
+  margin-right: 6px;
+  font-size: 15px;
+  color: inherit;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: #22c55e;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+.nav-links a.active {
+  color: #22c55e;
+}
+/*ABOUT PAGE CSS START*/
 .page_title{                                                /*page title css*/
 background: linear-gradient(to right,#19196b,#4949f4);
 background-clip: border-box;
@@ -9,8 +113,8 @@ background-clip: border-box;
  -webkit-text-fill-color: transparent;
  font-size: 33px;
  margin-left: 480px;
- margin-top: 50px;
- 
+ /* margin-top: 50px; */
+
 }
 
 .text-1{
@@ -68,7 +172,8 @@ margin-top: 20px;
   height:280px ;
   width: 350px;
 }
-.sub-card1{                                      /* card css for img in Sub-card in first card*/
+ /* =============card css for img in Sub-card in first card==========*/
+.sub-card1{                                      
   background-color: rgb(222, 222, 253);
   height: 60px;
   width: 60px;
@@ -106,7 +211,8 @@ margin-top: 20px;
  text-align: center;
  letter-spacing: 0.5px;
 } 
-.third_block{                                          /*Key Area Card*/
+ /*================Key Area Card=================*/
+.third_block{                                         
  background-color: rgb(244, 244, 247);
  height: 550px;
  width: 1111px;
@@ -156,7 +262,8 @@ margin-top: 20px;
   margin-left: 32px;
   transition: all 0.3s ease;
 }
-.card2{                                           /* Locations Css in key area*/
+ /* ============== Locations Css in key area================*/
+.card2{                                          
 background-color: #eef1ff;
  height: 170px;
  width: 240px;
@@ -214,7 +321,8 @@ border-top: 4px solid #f4b400;
  box-shadow: 0 18px 25px -10px rgb(235, 235, 210);
   background-color:#fcf1d6;
 }
-.img2{                                         /* Location img css in key area*/
+ /*=========== Location img css in key area===========*/
+.img2{                                        
   height: 30px;
   width: 30px;
   margin-top: 15px;
@@ -251,8 +359,8 @@ border-top: 4px solid #f4b400;
  
   color: rgb(55, 54, 54);
 }
-
-.card6{                                           /* Third block in key area */
+ /*==================== Third block in key area ================*/
+.card6{                                          
 background-color: #eef1ff;
  height: 120px;
  width: 240px;
@@ -314,7 +422,8 @@ padding-top: 18px;
  box-shadow: 0 18px 25px -10px rgb(235, 235, 210);
   background-color:#fcf1d6;
 }
-.topic-name5{                                             /* rating area*/
+  /*=================RATING AREA================*/
+.topic-name5{                                           
   font-size: 40px;
   color: #4b5de1;
  
@@ -335,7 +444,8 @@ padding-top: 18px;
  
  
 }
-.second_block{                        /*Second block css*/
+/*==============Second block css============*/
+.second_block{                        
    height: 400px;
   width:90%px;                         
    margin-left: 72px;
@@ -346,7 +456,8 @@ padding-top: 18px;
   justify-content:space-between;
   margin-bottom: -20px;
 }
-.sub-second-block1{                   /*Our mission code*/
+ /*============Our mission code==============*/
+.sub-second-block1{                  
   height: 330px;
   width:530px;
   background-color:#eafff3 ;
@@ -378,7 +489,9 @@ line-height: 22px;
   margin-top: -22px;
   color: rgb(86, 85, 85);
 }
-.sub-second-block2{                      /*Our vission code*/
+/*===========Our vission code============*/
+
+.sub-second-block2{                      
   background-color: #eef1ff;
   height: 330px;
   width:530px;
@@ -431,18 +544,20 @@ margin-top: -41px;
   margin-top: 10px;
   margin-left: 11px;
 }
-.middle-block{         /* Middle Block css*/
+/*===============MIDDLE-BLOCK CSS================*/
+.middle-block{         
  height: 450px;
   width:90%px;                         
    margin-left: 72px;
   margin-right: 60px;
   margin-top: -15px;
-  /* margin-bottom: -23px; */
+
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
 }
-.middle-block1{           /* Why choose NashikLocal CSS*/
+/*============= Why choose NashikLocal CSS============*/
+.middle-block1{           
   height:400px ;
   width: 530px;
 
@@ -490,7 +605,7 @@ margin-top: -41px;
   transform: translateY(-5px)scale(1.03);
   box-shadow: 0 18px 25px -10px  grey;
 }
-/* Media query*/
+/*========= MEDIA QUERY CSS APPLY============*/
 @media (max-width: 768px) {
 
   body {
@@ -628,3 +743,6 @@ margin-top: -41px;
     margin: 15px auto;
   }
 }
+/*===================FOOTER CSS START=========================*/
+
+
