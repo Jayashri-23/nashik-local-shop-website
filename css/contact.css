@@ -116,13 +116,17 @@ body {
 .main-heading {
     font-size: 42px;
     font-weight: 700;
-    color: #2f4fd8;
+    /* color: #2f4fd8; */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-
+  background: 
+    linear-gradient(90deg ,#161616, #2f4fd8 ,#4968f1);
+    background-clip:border-box ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     transition: 0.2s;
 }
 
